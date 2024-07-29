@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    display: flexbox;
+}
+
+body{
+    overflow: hidden;
+    overflow-y: scroll;
+    margin: 0;
+    background: url('/sumbergambar/foto.jpg');
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    background-color: rgb(228, 135, 13);
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 900;
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.home{
+    text-decoration: none;
+    color: white;
+    align-self: center;
+    margin: 50px;
+}
+
+.aboutme{
+    margin: 50px;
+    color: white;
+}
+
+.contact{
+    color: white;
+    margin: 50px;
+}
+
+.formulir{
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    background-color: crimson;
+    color: black;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 0 0 1056.5px;
+}
+
+.login {
+    margin: 50px;
+}
+
+.signup{
+    margin: 50px;
+}
+
+.container {
+    border: dashed 3px white;
+    padding: 50px 50px 50px 50px; 
+    text-align: left;
+    background:none;
+    background-size: cover;
+    width: 700px;
+    height: auto;
+    position: relative;
+    margin:60px 0 0 50px;
+    font-style: bold;
+    color: white;
+    font-size: 20px;
+    justify-content: flex-start;
+    font-family:sans-serif;
+    z-index: 99;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    margin: 5px 0;
+}
+
+.footer{
+    left: 0;
+    bottom: 0;
+    justify-self: last baseline;
+    position: fixed;
+    justify-content: last baseline;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    font-size: 25px;
+    color: yellow;
+    background-color: crimson;
+    z-index: 100;
+}
+
+.footer>marquee{
+    font-weight: 100;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+marquee:hover{
+    font-size: 50px;
+    background: url('/sumbergambar/profile.jpg');
+    background-size:contain;
+    img{
+        width: 50px;
+        height: 50px;
+        margin-right: 150px;
+    }
+}
+
+img{
+    margin: 0 10px 0 0;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    width: 25px;
+    height: 25px;
+}
+
+.ceritasingkat{
+    color: white;
+    overflow: visible;
+    padding: 0;
+    flex-direction: column;
+    margin: 20px 50px;
+    position: relative;
+    display: flex;
+    background-color: none;
+    width: 500px;
+    height: auto;
+}
+
+.ceritasingkat>table>thead{
+    color:  white;
+    align-items: center;
+}
+
+.gambar>img{
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>simple calculator</title>
+</head>
+
+<body>
+    <div class="display">
+        <input type="text" id="display" readonly>
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            <div class="tombolPart1">
+                <input type="button" id="btn1" value="1" onclick="print(1)">
+                <input type="button" id="btn2" value="2" onclick="print(2)">
+                <input type="button" id="btn3" value="3" onclick="print(3)">
+            </div>
+            <div class="tombolPart2">
+                <input type="button" id="btn4" value="4" onclick="print(4)">
+                <input type="button" id="btn5" value="5" onclick="print(5)">
+                <input type="button" id="btn6" value="6" onclick="print(6)">
+            </div>
+            <div class="tombolPart3">
+                <input type="button" id="btn7" value="7" onclick="print(7)">
+                <input type="button" id="btn8" value="8" onclick="print(8)">
+                <input type="button" id="btn9" value="9" onclick="print(9)">
+            </div>
+            <div class="zero">
+                <input type="button" id="btn" value="0" onclick="print(0)">
+            </div>
+            <div class="hasil">
+                <input type="button" onclick="hasil()" value="=">
+            </div>
+        </div>
+        <div class="operasiSign">
+            <input type="button" id="tambah" value="+" onclick="print('+')">
+            <input type="button" id="kurang" value="-" onclick="print(kurang)">
+            <input type="button" id="kali" value="*" onclick="print(kali)">
+            <input type="button" id="bagi" value="/" onclick="print(bagi)">
+            <div class="hapus">
+                <input type="button" onclick="erase()" value="C">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

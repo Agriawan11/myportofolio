@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+}
+
+.kembali {
+    display: flex;
+    padding: 5px auto;
+    width: 65px;
+    height: 65px;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: url('/sumbergambar/backmenulogo.JPG');
+    background-size: 100%;
+    box-shadow: 5px;
+}
+
+.kembali>a{
+    color:transparent;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    left: 50%;
+    right: 50%;
+    width: 500px;
+    height: 500px;
+    background-color: violet;
+    box-shadow: 4px 6px 14px 5px black;
+    border-radius: 5%;
+
+}
+
+.container>.form{
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    background-color: darkslategray;
+    color: crimson;
+    border: dashed 7px violet;
+    /* justify-content: center;
+    align-items: center; */
+    font-size: 18px;
+}
+
+.form>form{
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 20px auto;
+    margin: 0 auto;
+    width: 355px;
+    top: 50%;
+    left: 50%;
+    height: 355px;
+    /* text-align: center; */
+
+}
+
+.form>form>legend{
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.form>form>label{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: aquamarine;
+}
+
+.form>form>input{
+    font-family: sans-serif;
+    font-size: 12px;
+    margin: 5px auto;
+    background-color: yellow;
+    text-align: left;
+    border: yellow solid 1px;
+    border-radius: 2%;
+}
+
+.form>form>button{
+    width: auto;
+    height: 25px;
+    border: none;
+    border-radius: 20%;
+    background-color: aqua;
+    color: white;
+    margin: 0 0 0 10px;
+}
+
+.form>form>.saran{
+    text-wrap:pretty;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+}

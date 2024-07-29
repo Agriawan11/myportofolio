@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url('/sumbergambar/background.JPG');
+    background-size: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    background-position-y: -2px;
+}
+
+.navbar{
+    background-color: rgb(228, 135, 13);
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 900;
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.home{
+    text-decoration: none;
+    color: white;
+    align-self: center;
+    margin: 50px;
+}
+
+.aboutme{
+    /* margin: 50px; */
+    color: white;
+}
+
+.contact{
+    color: white;
+    margin: 50px;
+}
+
+.formulir{
+    display: flex;
+    align-items: center;
+    background-color: crimson;
+    color: black;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 0 0 1057.5px;
+}
+
+
+.formulir:button:a{
+    color: white;
+    font-style: none;
+    text-decoration: none;
+}
+
+.login {
+    margin: 50px;
+}
+
+.signup{
+    margin: 50px;
+}
+
+.container {
+    width: 415px;
+    height: 150px;
+    position: relative;
+    margin:200px 0 0 50px;
+    color: red;
+    font-size: 30px;
+    justify-content: flex-start;
+    font-family: sans-serif;
+}
+
+h3{
+    margin:0 0 15px 0;
+    flex-direction: row;
+}
+
+.gambar{
+    border-radius: 25%;
+    opacity: 0.5;
+    background: url(/sumbergambar/profile.jpg);
+    background-size: 100%;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    margin: 150px 0 0 800px;
+    align-items: center;
+}
+
+img{
+    border:3px solid white;
+    opacity: 0.5;
+    width: 350px;
+    height: 350px;
+}
+
+.home:hover{
+    background: url("/sumbergambar/background.JPG");
+    color: red;
+    font-size: 22px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.aboutme:hover{
+    background: url('/sumbergambar/background.JPG');
+    color: red;
+    font-size: 22px;
+    height: 45px;
+}
+
+.contact:hover{
+    background: url("/sumbergambar/background.JPG");
+    color: red;
+    font-size: 22px;
+    height: 45px;
+}
+
+.home.a{
+    color: red;
+}
+
+.tombol {
+    width: 400px;
+    height: 75px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.tombol>button{
+    margin: 15px 15px 15px 15px;
+    height: 25px;
+    width: 100px;
+    border-radius: 2px;
+    background: white;
+    border:solid 4px orange;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px auto;
+    text-decoration: black;
+    
+
+
+}
+
+button:hover{
+    animation-name: tombol;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    transition-duration: 0.5s;
+}
+
+.gambar:hover{
+    border: dotted 5px white;
+    opacity: 1.5;
+    /* border-radius: 55px; */
+    animation-name: ubahgambar;
+    animation-duration: 3.5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+}   
+
+
+@keyframes movingtext{
+    from{
+    width: 45%;
+    }
+    to{
+    width: 100%;
+    }
+}
+
+.sign{
+    width: 50px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    border-right: .10em solid red;
+    overflow: hidden;
+    color: red;
+    animation-name: movingtext;
+    animation-duration: 6.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tombol {
+    from{
+        background-color: white;
+    }
+    to{
+        border: none;
+        background-color: crimson;
+    }
+}
+
+@keyframes ubahgambar {
+    from{
+        background: url('/sumbergambar/profile.jpg');
+    }
+    to{
+        background: url('/sumbergambar/gambar3.jpg');
+        background-size: 100%;
+    }
+}
